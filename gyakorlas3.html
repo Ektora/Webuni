@@ -1,0 +1,102 @@
+<html>
+<head>
+	<title>Próba weblap</title>
+	<meta name="Author" content="Lucski Zsolt">
+	<meta name="description" content="Webuni html gyakorlás">
+	<meta name="keywords" content="tanulás, webuni, html">
+	<meta name="robots" content="all">
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+
+<body>
+	<!-- Táblázatok 
+	table-layout:fixed  a táblázat méretét a megadott méretre fixálja, levágja a túlnyúlást
+	
+	-->
+	<table cellspacing="50">
+	<tr>
+	<td>Minta táblázat: <br><br>
+	<img src="kepek/tablazat.png"></td>
+	
+	<td>
+	A mi táblázatunk:
+	<br><br>
+	
+	<table cellspacing="0" cellpadding="0" style="table-layout:fixed; font-family:verdana; font-size:30pt; font-weight:bold">
+	<tr style="height:100px" >
+	 <td style="width:100px; border:1px black solid; background:#FF0000"></td>
+	 <td style="width:100px; text-align:right; vertical-align:top; border-top:1px black solid; border-bottom:1px black solid">B</td>
+	 <td style="width:100px; text-align:center; border:1px black solid; border-top:0px; border-right:0px">C</td>
+	</tr>
+	<tr style="height:100px">
+	<td rowspan="2" style="text-align:center; vertical-align:bottom; border:1px black solid; border-top:0px">A</td>
+	<td colspan="2" style="border-right:1px black solid; background:#0000FF; color:white">D</td>
+	 </tr>
+	<tr style="height:100px">
+	<td style="border-top:1px black solid; border-bottom:1px black solid; background:yellow"></td>
+	<td style="border:1px black solid; background:#00FF00"></td>
+	</tr>
+	</table>
+	
+	</td>
+	</tr>
+	</table>
+	
+	<br><br><br><br>
+	
+	
+	<!-- Gyakorló tábla, stílus formázások, nyújtások
+	<table cellspacing="0" cellpadding="0" style="table-layout:fixed, font-family:verdana; font-size:30pt; color:blue; font-weight:bold">
+	<tr style="height:100px" >
+	 <td colspan="2" style="width:200px; text-align:center;	border:1px black solid; border-right:0px">1</td>
+	 <td style="width:100px; text-align:center; vertical-align:bottom;	border:1px black solid">3</td>
+	</tr>
+	<tr style="height:100px">
+	 <td style="width:100px;border-left:1px black solid;border-right:1px black solid">4</td>
+	 <td >5</td>
+	 <td rowspan="2" style="text-align:right; vertical-align:top; padding-top:20px; padding-right:20px; border-left:1px black solid;border-right:1px black solid;border-bottom:1px black solid">6</td>
+	</tr >
+	<tr style="height:100px">
+	 <td style="border:1px black solid">7</td>
+	 <td style="padding:10px;background:#FFFF66; border-top:1px black solid; border-bottom:1px black solid">8</td>
+	</tr>
+	</table>
+	-->
+	<br><br>
+	<!-- Speciális karakterek -->
+	<font style="font-size:20pt">
+	&copy; Copyright - Minden jog fenntartva! Ektora Company &trade;
+	<br><br>
+	Cari&ntilde;o
+	<br><br>
+	A linkek szerkezete: &lt;a href=&quot;...&quot;&gt;link szövege&lt;/a&gt;
+	<br>
+	Egy negyed: &frac14;&euro;
+	
+	<!-- Listaelemek jelölésének típusai (list-style-type):
+	disc, circle, square, decimal, lower-roman, upper-roman, lower-alpha, upper-alpha, none
+	-->
+	
+	<ul style="font-size:12pt; font-family:tahoma; list-style-type:square; color:blue">
+		<li>kék
+		<li>piros
+		<li>bíbor
+		<li>türkiz
+	</ul>
+	<ol style="font-size:12pt; font-family:tahoma; color:crimson">
+		<li>kék
+		<li>piros
+		<li>bíbor
+		<li>türkiz
+	</ol>
+	<dl style="font-size:12pt; font-family:tahoma; color:#339999">
+		<dt><b>Farkas</b>
+		<dd>kutyaszerű ragadozó emlős<br><br>
+		<dt><b>Oroszlán</b>
+		<dd>macskaszerű ragadozó emlős
+		<dd>az állatok királya
+	</dl>
+	</font>
+</body>
+</html>
