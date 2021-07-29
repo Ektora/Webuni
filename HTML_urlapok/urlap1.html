@@ -12,9 +12,9 @@
         <form name="urlap">
             <p style="font-size: 14pt;"><b>HTML űrlap</b></p>
             <br><br>
-
+			<!--
             Üres szöveges beviteli mező:
-			<!-- name= űrlap feldolgozó tudja értelmezni -->
+			<!-- name= űrlap feldolgozó tudja értelmezni 
             <input name="szoveg">
 			<br><br>
 			Alapértékkel szöveges beviteli mező:
@@ -27,6 +27,14 @@
 			Formázott szöveges beviteli mező:
 			<input name="beviteli_mezo" value="ez lesz az alapszöveg" style="font-family:verdana; font-size:12pt; color:#333399;
 				width:300px;text-align:center; font-weight:bold;border:3px #990066 dashed; background:#FFFF66; height:50px">
+			-->
+			<b>Név:</b>
+			<input name="beviteli_mezo" value="ide írd a neved" style="font-family:verdana; font-size:10pt; color:#333399;
+			width:300px;text-align:center;border:2px #990066 solid; background:#FFFF66;" maxlength="50">
+			<br><br>
+			<b>Jelszó:</b>
+			<input type="password" name="jelszo" style="font-size:10pt; color:#333399;
+			width:200px; text-align:center; border:2px #990066 solid; background:#FFCCFF;" maxlength="6">
         </form>
 
     </body>
