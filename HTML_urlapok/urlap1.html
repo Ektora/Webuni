@@ -13,9 +13,20 @@
             <p style="font-size: 14pt;"><b>HTML űrlap</b></p>
             <br><br>
 
-            Szöveges beviteli mező:
-            <input>
-
+            Üres szöveges beviteli mező:
+			<!-- name= űrlap feldolgozó tudja értelmezni -->
+            <input name="szoveg">
+			<br><br>
+			Alapértékkel szöveges beviteli mező:
+			<input name="alapszoveg" value="ez az alapszöveg">
+			<br><br>
+			Szöveges beviteli mező formázott tartalommal:
+			<input name="formazott" value="ez lesz az alapszöveg" style="font-family:verdana; font-size:12pt; color:#333399;
+				width:300px;text-align:center; font-weight:bold">
+				<br><br>
+			Formázott szöveges beviteli mező:
+			<input name="beviteli_mezo" value="ez lesz az alapszöveg" style="font-family:verdana; font-size:12pt; color:#333399;
+				width:300px;text-align:center; font-weight:bold;border:3px #990066 dashed; background:#FFFF66; height:50px">
         </form>
 
     </body>
