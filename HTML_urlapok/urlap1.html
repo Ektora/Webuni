@@ -11,10 +11,27 @@
         
         <form name="urlap">
             <p style="font-size: 14pt;"><b>HTML űrlap</b></p>
+			<br><br>
+			<!-- Hatástalanított mező -->
+			Hatástalanított mező:<input type="text" style="border:0" value="Ektora" disabled>
+			<br><br>
+				<input type="checkbox" name="proba1" value="1">1&nbsp;&nbsp;
+				<input type="checkbox" name="proba2" value="2" checked disabled>2&nbsp;&nbsp;
+				<input type="checkbox" name="proba3" value="3" disabled>3&nbsp;&nbsp;
+			<br><br>
+				<input type="radio" name="valami" value="1">1
+				<input type="radio" name="valami" value="2" checked disabled>2
+				<input type="radio" name="valami" value="3">3
             <br><br>
+			<!-- Csak olvasható mezők -->
+			Csak olvasható mező:<input type="text" style="border:0" value="Ektora" readonly>
+				
 			
+			<!-- Rejtett mezők, információk átadására -->
+			<input type="hidden" name="rejtett" value="proba">
+			<input type="hidden" name="mitcsinal" value="modosit">
+			<br><br><br>
 			<!-- Gombok / Alaphelyzetbe állító / Elküldő gombok -->
-			
 			<input type="button" value="A gomb szövege" style="width:200px; height:100px; font-family:tahoma; font-size:12px; font-weight:bold; color:red; background:yellow">
 			<br><br><br>
 			<button type="button" style="width:127px; height:114px"><img src="gomb.jpg" width="117" height="104" border="0" alt=""></button>
