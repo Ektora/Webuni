@@ -12,6 +12,9 @@
         <form name="urlap">
             <p style="font-size: 14pt;"><b>HTML űrlap</b></p>
 			<br><br>
+			<!-- Mezők csoportosítása, név adás -->
+			<fieldset style="width:400px; padding:20px; border:2px red dotted; font-family:courier new; background:yellow">
+			<legend style="border:2px red dashed; padding:5px; background:lightgreen">Szöveges beviteli mezők</legend>
 			<!-- Hatástalanított mező -->
 			Hatástalanított mező:<input type="text" style="border:0" value="Ektora" disabled>
 			<br><br>
@@ -26,7 +29,7 @@
 			<!-- Csak olvasható mezők -->
 			Csak olvasható mező:<input type="text" style="border:0" value="Ektora" readonly>
 				
-			
+			</fieldset>
 			<!-- Rejtett mezők, információk átadására -->
 			<input type="hidden" name="rejtett" value="proba">
 			<input type="hidden" name="mitcsinal" value="modosit">
@@ -119,6 +122,8 @@
 			<br>
 			<hr>
 			<br>
+			<fieldset style="width:400px; padding:20px">
+			<legend>Checkboxok és rádiógombok</legend>
 			<!-- Rádiógombok name szerint csoportosíthatóak, értékek különbözőek-->
 			<input type="radio" name="fagyi" value="mogyoró">mogyoró fagyi<br>
 			<input type="radio" name="fagyi" value="puncs">puncs fagyi<br>
@@ -135,7 +140,7 @@
 			<br><br><hr><br>
 			<!-- Szöveges területek 
 			a szöveg megtartja az előzetes szövegelosztást-->
-			
+			</fieldset>
 			<textarea style="width:600px;height:100px;color:red;background:yellow;text-align:center">Ez a szöveg lesz a területen
 			</textarea>
 			<br><br><hr><br>
