@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="hu">
+    <head>
+        <title>HTML űrlap</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="Author" content="Lucski Zsolt">
+    
+    </head>
+    <body>
+        <!-- Űrlap feldolgozás | action a feldolgozó oldal neve, get=keresősorban átküldött adatok, POST-ban nincs; enctype multipart rész fájlok átküldéséhez  -->
+        <form name="urlap" action="feldolgozo.html" method="POST" enctype="multipart/form-data">
+			<h3>Jelentkezési űrlap</h3>
+			<br><br>
+			<table cellspacing="10" cellpadding="0" style="font-size:10pt">
+			<tr>
+				<td text-align="right"><b>Név:</b></td>
+				<td><input name="nev" style="width:100px"></td>
+			</tr>
+			<tr>
+				<td text-align="right"><b>E-mail:</b></td>
+				<td><input name="nev" style="width:150px"></td>
+			</tr>
+			<tr>
+				<td text-align="right"><b>Életkor:</b></td>
+				<td><select name="eletkor">
+				<option value="10">10
+				<option value="20">20
+				<option value="30">30
+				<option value="40">40
+				<option value="50">50
+			</select></td>
+			</tr>
+			<tr>
+				<td text-align="right"><b>Hírlevél:</b></td>
+				<td><input type="radio" name="hirlevel" value="0">Nem kérek
+			&nbsp;&nbsp;
+			<input type="radio" name="hirlevel" value="1">Kérek</td>
+			</tr>
+			<tr>
+				<td text-align="right"><b>Fénykép:</b></td>
+				<td><input type="file" name="fenykep">
+			</tr>
+			<tr>
+			<td colspan="2" ><input type="submit" value="Elküldöm a jelentkezést!" style="width:100%"></td>
+			</tr>
+			</table>
+			
+			<br><br>
+			
+        </form>
+
+    </body>
+</html>
