@@ -10,7 +10,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
         <script>
-            
+          /*
 			function udvozles(){
 				var uzenet='Jó napot kívánok!';
 				alert(uzenet);
@@ -19,20 +19,63 @@
 			function udvozles_2(szoveg, szam){
 				alert(szoveg + ' ' + szam + ' óra van.');
 			}
+		*/
+			function udvozles(){
+				var ora = 26;
+				var uzenet;
+				if(ora>0 && ora<=4)
+				{
+					uzenet='Kellemes éjszakát kívánok!';
+				}
+				else if(ora>4 && ora<=10){
+					uzenet='Jó reggelt kívánok!';
+				}
+				else if(ora>10 && ora<=18){
+					uzenet='Jó napot kívánok!';
+				}
+				else if(ora>8 && ora<=22){
+					uzenet='Szép estét kívánok!';
+				}
+				else if(ora>22 && ora<=24){
+					uzenet='Kellemes éjszakát kívánok!';
+				}
+				else{
+					uzenet='Szia!';
+				}
+				
+				if(uzenet=='Szia!'){
+				alert(uzenet);
+				}
+				else{
+				alert(uzenet + ' ' + ora + ' óra van.');
+				}
+			}
+			
         </script>
     </head>
     <body>
-		
-		<script>
-		//	var udvozles='Szerbusz';
-        //    alert(udvozles);
-        </script>
-	
+			
 		<br><br>
 		<p align="center">
+		<!--
         <input type="button" value="Üzenet kiírása" onClick="udvozles()">
 		<br><br>
 		<input type="button" value="Üzenet kiírása" onClick="udvozles_2('Szép napot kívánok', 6)">
+		-->
+		<input type="button" value="Üdvözlés" onClick="udvozles()">
+		<br><br>
+		
+		<script>
+			var x=4;
+			var y=12;
+			document.write(x + ' + ' + y + ' = ' + (x+y) + '<br><br>');
+			document.write(y + ' - ' + x + ' = ' + (y-x) + '<br><br>');
+			document.write(x + ' * ' + y + ' = ' + (x*y) + '<br><br>');
+			document.write(y + ' / ' + x + ' = ' + (y/x) + '<br><br>');
+			udvozles();
+			
+        </script>
+		
         </p>
 
     </body>
