@@ -22,6 +22,9 @@
 		*/
 			function udvozles(){
 				//var ora = 23;
+				//Megerősítés kérése
+				var felkeszult = confirm('Biztosan felkészültél az üdvözlésre?');
+				if(felkeszult){
 				var datum = new Date();
 				var ora = datum.getHours();
 				var uzenet;
@@ -47,6 +50,10 @@
 				}
 				else{
 				alert(uzenet + ' ' + ora + ' óra van.');
+				}
+				}
+				else{
+					alert('Próbáld meg újra');
 				}
 			}
 			// Felugró ablak
