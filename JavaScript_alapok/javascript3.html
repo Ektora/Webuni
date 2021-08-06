@@ -21,9 +21,11 @@
 			}
 		*/
 			function udvozles(){
-				var ora = 26;
+				//var ora = 23;
+				var datum = new Date();
+				var ora = datum.getHours();
 				var uzenet;
-				if(ora>0 && ora<=4)
+				if((ora>0 && ora<=4) || (ora>22 && ora<=24))
 				{
 					uzenet='Kellemes éjszakát kívánok!';
 				}
@@ -36,9 +38,6 @@
 				else if(ora>8 && ora<=22){
 					uzenet='Szép estét kívánok!';
 				}
-				else if(ora>22 && ora<=24){
-					uzenet='Kellemes éjszakát kívánok!';
-				}
 				else{
 					uzenet='Szia!';
 				}
@@ -50,7 +49,12 @@
 				alert(uzenet + ' ' + ora + ' óra van.');
 				}
 			}
+			// Felugró ablak
+			var neve = prompt('Kérlek gépeld be a neved az alábbi mezőbe:','ide írd a neved');
 			
+			if(neve=='' || neve=='ide írd a neved' || neve==null){
+				neve='kedves ismeretlen';
+			}
         </script>
     </head>
     <body>
@@ -66,13 +70,15 @@
 		<br><br>
 		
 		<script>
+			document.write('<br><br><b>Szia ' + neve + '! Üdvözöllek a weblapomon!</b><br><br>');
+		
 			var x=4;
 			var y=12;
 			document.write(x + ' + ' + y + ' = ' + (x+y) + '<br><br>');
 			document.write(y + ' - ' + x + ' = ' + (y-x) + '<br><br>');
 			document.write(x + ' * ' + y + ' = ' + (x*y) + '<br><br>');
 			document.write(y + ' / ' + x + ' = ' + (y/x) + '<br><br>');
-			udvozles();
+			//udvozles();
 			
         </script>
 		
